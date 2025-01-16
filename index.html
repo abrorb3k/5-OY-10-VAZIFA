@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>10-DARS</title>
+  </head>
+  <style>
+    #table{
+    border:  1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 50px auto;
+}
+
+th , td{
+    border: 1px solid black;
+    padding: 5px;
+}
+  </style>
+  <body>
+
+    <form id="form">
+    <input type="text" placeholder="Enter name" id="name">
+    <input type="number" placeholder="Enter price" id="price">
+    <input type="number" placeholder="Enter count" id="count">
+    <button id="btn">button</button>
+   </form>
+
+   <table id="table"> 
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nomi</th>
+            <th>Narxi</th>
+            <th>Soni</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+      
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"><b>Jami:</b></td>
+            <td id="overalPrice"></td>
+            <td id = "overalCount"></td>
+        </tr>
+    </tfoot>
+   </table>
+
+
+    <!-- 1-masala -->
+
+      <div">
+        <button style="width: 70px;" id="btn11">Generate Emoji</button>
+        <div id="emoji"></div>
+      </div><br><br><br><br><br>
+
+
+      <!-- 2-masala -->
+
+
+      <textarea name="" id="textarea"></textarea>
+    <select id="textweight">
+      <option value="normal">normal</option>
+      <option value="bold">bold</option>
+      <option value="300">300</option>
+      <option value="700">700</option>
+      <option value="900">900</option>
+    </select>
+    <select id="fontfamily">
+      <option value="italic">italic</option>
+      <option value="tahoma">tahoma</option>
+      <option value="geneva">geneva</option>
+    </select>
+    <button id="clearbtn">Clear</button>
+    </div> <br><br><br><br>
+
+
+     <!-- 3-masala -->
+
+    <button id="start">Start</button>
+    <div id="progressDiv">
+      <div id="progress">
+      </div>
+    </div>
+    <h5 style="display: none; color: green; font-size: 25px;" id="tugadi">Tugadi<h5>
+
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

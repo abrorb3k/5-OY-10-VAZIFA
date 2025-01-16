@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#start{
+   background-color: blue; 
+   color: white;
+   padding: 5px 20px;
+   font-size: 20px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+}
+#progressDiv{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+#progress{
+    width: 0;
+    height:39px ;
+    background: linear-gradient(to right , red ,rgb(179, 255, 0), green);
+    border-radius: 9px;
+    transition: all 0.1s ease-in;
+}
