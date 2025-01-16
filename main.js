@@ -38,8 +38,7 @@ btn &&  btn.addEventListener("click",function(event){
 
    overalCount.innerHTML = oldsumC + (Number(product.count));
    overalPrice.innerHTML = oldsumP + Number(product.price);
-               window.location.reload();
-
+window.location.reload();
 })
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -74,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 localStorage.setItem("products", JSON.stringify(products))
 
                 this.parentNode.parentNode.remove()
-                window.location.reload()
+                // window.location.reload()
             }
         })
       })
